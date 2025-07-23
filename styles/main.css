@@ -14,6 +14,10 @@ img{
     margin: auto;
 }
 
+h1,h2,h3{
+   font-family: "Noto Serif", serif;
+}
+
 
 /* Font */
 .noto {
@@ -68,4 +72,34 @@ nav li a{
 
 #cart{
     margin-right: 10px;
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-left h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.banner-left p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+
+.banner-right img{
+    display: block;
+}
+
+.banner>div{
+    flex:1;
+}
+
+.orange{
+    color: #E95A08;
 }
