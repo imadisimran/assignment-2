@@ -1,5 +1,22 @@
+/* Common */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.primary-width{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
 /* Font */
-.noto-serif {
+.noto {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight:bold;
@@ -13,4 +30,42 @@
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+}
+
+
+
+/* nav styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    max-width: 80%;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    gap:50px;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: #252432;
+}
+
+#home{
+    font-weight: bold;
+}
+
+.dim{
+    color: #8987A1;
+
+}
+
+#cart{
+    margin-right: 10px;
 }
