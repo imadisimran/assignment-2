@@ -23,6 +23,17 @@ h2 {
     margin-top: 130px !important;
 }
 
+/* Animation */
+
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 /* Font */
 .noto {
     font-family: "Noto Serif", serif;
@@ -202,6 +213,7 @@ nav li a {
     position: absolute;
     top: -143px;
     right: -95px;
+    animation: spinner 5s ease-in infinite forwards;
 }
 
 
