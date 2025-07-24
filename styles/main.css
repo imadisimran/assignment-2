@@ -14,10 +14,13 @@ img{
     margin: auto;
 }
 
-h1,h2,h3{
+h1,h2{
    font-family: "Noto Serif", serif;
 }
 
+.mt-120{
+    margin-top:120px;
+}
 
 /* Font */
 .noto {
@@ -104,16 +107,77 @@ nav li a{
     color: #E95A08;
 }
 
+
+/* Plants */
+
+.plant-content{
+    text-align: center;
+    width:70%;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+
+.plant-content h2{
+    margin-bottom: 30px;
+    font-size: 3.1rem;
+
+}
+
+.plant-content p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap:20px;
+    text-align: center;
+}
+
+.card > *{
+    margin-bottom:20px;
+    font-size:1rem;
+}
+.card>h3{
+    font-weight: 500;
+    font-size:1.3rem;
+}
+
+
+
+.card>h3:last-of-type{
+    font-weight: bold;
+}
+
+.card button{
+    box-sizing: border-box;
+    width:100%;
+    padding:18px 0px;
+    color:white;
+    background-color: #E95A08;
+    font-weight: 500;
+    border:none;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
 /* Responsive */
 @media screen and (max-width:576px) {
+
     .mobile-hidden{
         display: none;
     }
 
     nav,
-    .banner-left{
+    .banner-left,
+    .plants{
         width:calc(100% - 40px);
-        margin:auto;
+        margin:0 auto;
+    }
+
+    .plants{
+        margin-top:65px;
     }
 
     .banner{
@@ -128,4 +192,31 @@ nav li a{
     .banner-left p{
         font-size: 0.8rem;
     }
+
+    /* Plant section responsive */
+
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plant-content{
+        width:100%;
+    }
+
+    .card h3{
+        font-size: 1rem;
+    }
+
+    .card button{
+        font-size: 0.8rem;
+    }
+
+    .plant-content h2{
+        font-size: 1.5rem;
+    }
+
+    .plant-content p{
+        font-size: 0.8rem;
+    }
+
 }
