@@ -1,0 +1,102 @@
+.latest-collages {
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    grid-template-rows: 230px 230px;
+     /* gap: 30px; */
+    grid-template-areas:
+    "top-left right"
+    "bottom-left right";
+}
+
+#top-left{
+    grid-area: top-left;
+}
+
+#bottomk-left{
+    grid-area: bottom-left;
+}
+
+#big{
+    grid-area: right;
+}
+
+.latest-collages h3 {
+    font-family: "Noto Serif", serif;
+}
+
+.latest-collages .collage {
+    /* padding:60px 50px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.black-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity:0.4; */
+}
+
+.collage-text {
+    position: relative;
+    z-index: 1;
+}
+
+.collage-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.collage-text a {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+#big h3 {
+    font-size: 2.5rem;
+}
+
+#big a {
+    font-size: 1.8rem;
+}
+
+.latest-collages .collage:nth-child(1) {
+    background-image: url("../assets/deal-ana.png");
+}
+
+.latest-collages .collage:nth-child(3) {
+    background-image: url("../assets/deal-bloom.png");
+}
+
+.latest-collages .collage:nth-child(2) {
+    background-image: url("../assets/deal-zabo.png");
+}
+
+/* #big {
+    grid-row: span 2;
+} */
+
+
+@media screen and (max-width:576px) {
+    .latest-collages{
+        grid-template-areas: 
+        "top-left"
+        "right"
+        "bottom-left";
+        grid-template-rows: 230px 230px 230px;
+    }
+}

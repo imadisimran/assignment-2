@@ -237,7 +237,7 @@ nav li a {
 .black-layer {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
     position: absolute;
     top: 0;
     left: 0;
@@ -261,27 +261,24 @@ nav li a {
     font-weight: bold;
 }
 
-#big h3 {
+#right h3 {
     font-size: 2.5rem;
 }
 
-#big a {
+#right a {
     font-size: 1.8rem;
 }
 
-.latest-collages .collage:nth-child(1) {
+#left-top {
     background-image: url("../assets/deal-ana.png");
 }
 
-.latest-collages .collage:nth-child(3) {
+#left-bottom {
     background-image: url("../assets/deal-bloom.png");
 }
 
-.latest-collages .collage:nth-child(2) {
+#right {
     background-image: url("../assets/deal-zabo.png");
-}
-
-#big {
     grid-row: span 2;
 }
 
@@ -480,15 +477,15 @@ nav li a {
         grid-template-rows: repeat(3, 230px);
     }
 
-    #big {
+    #right {
         grid-row: 3;
     }
 
-    #big h3 {
+    #right h3 {
         font-size: 1.25rem;
     }
 
-    #big a {
+    #right a {
         font-size: 1rem;
     }
 
@@ -506,6 +503,10 @@ nav li a {
 
     .footer-links ul{
         grid-template-columns: 1fr;
+    }
+
+    .footer-logo{
+        width: 100%;
     }
 
 }
