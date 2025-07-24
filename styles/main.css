@@ -285,6 +285,67 @@ nav li a {
     grid-row: span 2;
 }
 
+
+/* Join bunch section */
+
+.join-bunch {
+    background-image: url("../assets/news-letter-bg.png");
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+
+.join-bunch h1 {
+    font-size: 3.1rem;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.join-bunch-content {
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe input {
+    padding: 17px 0px;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+
+#email {
+    flex: 3;
+    padding-left: 18px;
+}
+
+#submit {
+    flex: 1;
+    font-weight: 600;
+    background-color: #E95A08;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 /* Responsive */
 @media screen and (max-width:576px) {
 
@@ -296,7 +357,8 @@ nav li a {
     .banner-left,
     .plants,
     .flower-lover,
-    .latest {
+    .latest,
+    .join-bunch-content {
         width: calc(100% - 32px);
         margin: 0 auto;
         /* padding:0px 20px; */
@@ -304,7 +366,8 @@ nav li a {
 
     .plants,
     .flower-lover,
-    .latest {
+    .latest,
+    .join-bunch {
         margin-top: 65px !important;
     }
 
@@ -386,6 +449,12 @@ nav li a {
 
     #big a {
         font-size: 1rem;
+    }
+
+    /* Join bunch */
+
+    .join-bunch h1 {
+        font-size: 1.5rem;
     }
 
 }
