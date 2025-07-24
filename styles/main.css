@@ -50,8 +50,8 @@ nav {
     margin-bottom: 120px;
 }
 
-.logo img {
-    max-width: 80%;
+.logo img,.footer-logo img {
+    max-width: 100%;
 }
 
 nav>ul {
@@ -346,6 +346,46 @@ nav li a {
 }
 
 
+/* Footer design */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding:50px 0px;
+}
+
+.footer-logo{
+    max-width: 330px;
+}
+
+/* .footer-container>div{
+    flex:1;
+} */
+
+.footer-logo p{
+    color:rgba(0, 0, 0, 0.5);
+    font-size:1.25rem;
+    margin-top:20px;
+}
+
+.footer-links ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:35px 110px;
+}
+
+.footer-links ul a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    align-self: flex-start;
+}
 /* Responsive */
 @media screen and (max-width:576px) {
 
@@ -358,7 +398,8 @@ nav li a {
     .plants,
     .flower-lover,
     .latest,
-    .join-bunch-content {
+    .join-bunch-content,
+    .footer-container {
         width: calc(100% - 32px);
         margin: 0 auto;
         /* padding:0px 20px; */
@@ -455,6 +496,16 @@ nav li a {
 
     .join-bunch h1 {
         font-size: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-container{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .footer-links ul{
+        grid-template-columns: 1fr;
     }
 
 }
